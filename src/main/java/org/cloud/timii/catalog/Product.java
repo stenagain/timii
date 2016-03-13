@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cloud.timii.model;
+package org.cloud.timii.catalog;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -26,10 +26,10 @@ public class Product {
 	}
 
 	private String ID = UUID.randomUUID().toString();
-	private String name = "Lawn Mowing";
-	private String description = " Mowing the lawn";
+	private String name ;
+	private String description;
 	private String[] tags;
-	private BigDecimal price = new BigDecimal(20.00);
+	private BigDecimal price = new BigDecimal(0.00);
 
 	/**
 	 * @return the iD

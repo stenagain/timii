@@ -23,7 +23,7 @@ public class App {
 
 		ut.deploy(ta);
 
-		ut.start(Undertow.builder().addHttpListener(8080, "192.168.1.100")
+		ut.start(Undertow.builder().addHttpListener(8080, "localhost")
 
 		);
 

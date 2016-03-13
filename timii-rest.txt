@@ -1,0 +1,24 @@
+
+
+Product
+
+GET PRODUCTS {ID}
+		/product? - Gets all Products Query params (location, user, description, tag, sort)
+		/product/{id} - Gets a set of products
+		/product?
+		
+	
+
+	/product?location=53211&desc=shoes
+	/product/1232-qweqwe-123123-sfsf
+	
+POST
+
+	/product
+	
+	Products
+		Product
+
+
+	
+	

@@ -3,7 +3,7 @@
  */
 package org.cloud.timii;
 
-import org.cloud.timii.model.Product;
+import org.cloud.timii.catalog.Product;
 
 /**
  * @author sten
