@@ -38,7 +38,6 @@ public class ReviewEndpoint {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getReviews() {
-
 		return Response.status(Response.Status.OK).entity(service.getReviews()).build();
 	}
 

@@ -31,6 +31,7 @@ public class Product {
 	private String[] tags;
 	private BigDecimal price = new BigDecimal(0.00);
 
+
 	/**
 	 * @return the iD
 	 */
