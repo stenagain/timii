@@ -18,6 +18,7 @@ import javax.ws.rs.core.Response;
 
 import org.cloud.timii.catalog.Product;
 import org.cloud.timii.catalog.Products;
+import org.cloud.timii.exchange.ExchangeEndpoint;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

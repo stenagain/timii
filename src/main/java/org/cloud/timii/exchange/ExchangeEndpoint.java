@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cloud.timii;
+package org.cloud.timii.exchange;
 
 import java.util.logging.Logger;
 
@@ -18,13 +18,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Path("/exchange")
 public class ExchangeEndpoint {
 
-	ObjectMapper mapper = new ObjectMapper();
+	private static final ObjectMapper mapper = new ObjectMapper();
 	private static final Logger LOG = Logger.getLogger(ExchangeEndpoint.class
 			.getName());
 
 	@GET
 	public Response getStatus() {
-		return Response.status(Response.Status.OK).entity("Welcome to the Exchange").build();
+		return Response.status(Response.Status.OK)
+				.entity("Welcome to the Exchange").build();
 	}
 
 }

@@ -1,8 +1,9 @@
 /**
  * 
  */
-package org.cloud.timii;
+package org.cloud.timii.exchange;
 
+import org.cloud.timii.ServiceRequest;
 import org.cloud.timii.catalog.Product;
 
 /**

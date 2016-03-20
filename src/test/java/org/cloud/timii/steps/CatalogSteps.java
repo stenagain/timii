@@ -21,7 +21,7 @@ public class CatalogSteps {
 
 	@When("I call get catalog")
 	public void whenICallGetCatalog() {
-		response = catalog.getProducts("");
+		response = catalog.getProducts("zz");
 	}
 
 	@Then("the outcome should be $result")

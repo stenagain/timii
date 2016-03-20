@@ -8,6 +8,9 @@ import java.util.Set;
 
 import javax.ws.rs.core.Application;
 
+import org.cloud.timii.exchange.ExchangeEndpoint;
+import org.cloud.timii.review.ReviewEndpoint;
+
 /**
  * @author sten
  *
@@ -21,6 +24,17 @@ public class TestApplication extends Application {
 
 		clazzes.add(ExchangeEndpoint.class);
 		clazzes.add(ProductEndpoint.class);
+		return clazzes;
+	}
+	
+	
+	/* (non-Javadoc)
+	 * @see javax.ws.rs.core.Application#getSingletons()
+	 */
+	@Override
+	public Set<Object> getSingletons() {
+		final Set<Object> clazzes = new HashSet<Object>();
+		clazzes.add(new ReviewEndpoint());
 		return clazzes;
 	}
 

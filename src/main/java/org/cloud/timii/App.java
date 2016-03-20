@@ -15,7 +15,6 @@ public class App {
 	private static final Logger logger = Logger.getLogger(App.class.getName());
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
 
 		UndertowJaxrsServer ut = new UndertowJaxrsServer();
 
@@ -23,10 +22,8 @@ public class App {
 
 		ut.deploy(ta);
 
-		ut.start(Undertow.builder().addHttpListener(8080, "localhost")
+		ut.start(Undertow.builder().addHttpListener(8080, "localhost"));
 
-		);
-
-		logger.info("JAX-RS based micro-service running!");
+		logger.info("Server up and running...");
 	}
 }
