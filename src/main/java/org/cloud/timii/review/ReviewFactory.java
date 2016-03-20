@@ -19,7 +19,7 @@ public class ReviewFactory {
 		r.setRating(Review.Rating.ONE);
 		r.setReview("This procut was horrible!!!");
 		r.setProductID("3");
-		r.setUserID("user:23444");
+		r.setReviewerID("user:23444");
 		return r;
 	}
 	

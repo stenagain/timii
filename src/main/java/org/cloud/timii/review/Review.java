@@ -13,7 +13,7 @@ public class Review {
 	}
 
 	private String ID;
-	private String userID;
+	private String reviewerID;
 	private String productID;
 	private String review;
 	private Rating rating = Rating.FIVE;
@@ -36,16 +36,16 @@ public class Review {
 	/**
 	 * @return the userID
 	 */
-	public String getUserID() {
-		return userID;
+	public String getReviewerID() {
+		return reviewerID;
 	}
 
 	/**
-	 * @param userID
+	 * @param reviewerID
 	 *            the userID to set
 	 */
-	public void setUserID(String userID) {
-		this.userID = userID;
+	public void setReviewerID(String reviewerID) {
+		this.reviewerID = reviewerID;
 	}
 
 	/**

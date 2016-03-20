@@ -102,7 +102,7 @@ public class DefaultReviewService implements ReviewService {
 	 */
 	private boolean checkReview(Review review) {
 		if (null == review || null == review.getID()
-				|| null == review.getProductID() || null == review.getUserID()) {
+				|| null == review.getProductID() || null == review.getReviewerID()) {
 			return false;
 		}
 		return true;
