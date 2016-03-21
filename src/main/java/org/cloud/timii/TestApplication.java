@@ -9,6 +9,7 @@ import java.util.Set;
 import javax.ws.rs.core.Application;
 
 import org.cloud.timii.exchange.ExchangeEndpoint;
+import org.cloud.timii.product.ProductEndpoint;
 import org.cloud.timii.review.ReviewEndpoint;
 
 /**
@@ -35,6 +36,7 @@ public class TestApplication extends Application {
 	public Set<Object> getSingletons() {
 		final Set<Object> clazzes = new HashSet<Object>();
 		clazzes.add(new ReviewEndpoint());
+		clazzes.add(new ProductEndpoint());
 		return clazzes;
 	}
 

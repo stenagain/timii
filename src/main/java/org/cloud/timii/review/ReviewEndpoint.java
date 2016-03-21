@@ -45,7 +45,7 @@ public class ReviewEndpoint {
 	@Path("{id}")
 	public Response getReview(@PathParam("id") String id) {
 
-		return Response.status(Response.Status.OK).entity(service.getReviews()).build();
+		return Response.status(Response.Status.OK).entity(service.getReviews(id)).build();
 
 	}
 

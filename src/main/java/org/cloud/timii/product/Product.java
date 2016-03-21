@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.cloud.timii.catalog;
+package org.cloud.timii.product;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

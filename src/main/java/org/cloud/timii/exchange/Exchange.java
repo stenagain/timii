@@ -4,7 +4,7 @@
 package org.cloud.timii.exchange;
 
 import org.cloud.timii.ServiceRequest;
-import org.cloud.timii.catalog.Product;
+import org.cloud.timii.product.Product;
 
 /**
  * @author sten
