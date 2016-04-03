@@ -9,7 +9,7 @@ package org.cloud.timii;
  */
 public class Res<T> {
 	public enum Type {
-		BAD_REQUEST, CREATED, NOT_FOUND, OK;
+		BAD_REQUEST, CREATED, NOT_FOUND, OK, DELETED;
 	}
 
 	private Type type;
