@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  *
  */
 public class ProductFactory {	
-	public Product create() {
+	public static Product create() {
 		Product p = new Product();
 		p.setName("We are great at java");
 		p.setID(UUID.randomUUID().toString());
@@ -23,10 +23,18 @@ public class ProductFactory {
 		return p;
 	}
 	
+	public static Product create(String name, String desc, double price) {
+		Product p = new Product();
+		p.setName(name);
+		p.setID(UUID.randomUUID().toString());
+		p.setDescription(desc);
+		p.setPrice(new BigDecimal(price));
+		return p;
+	}
+	
 	public static void main(String[] args) throws JsonProcessingException {
 		ObjectMapper mapper = new ObjectMapper();
-		ProductFactory factory = new ProductFactory();
-		Product p = factory.create();
+		Product p = ProductFactory.create();
 		String content = mapper.writeValueAsString(p);
 		System.out.println(content);
 	}

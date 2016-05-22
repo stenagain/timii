@@ -12,8 +12,6 @@ public interface ProductService {
 
 	public Res<Products> getProducts();
 	 
-	public Res<Products> getProducts(String descStr);
-
 	public Res<Product> getProductByID(String id);
 
 	public Res<Product> createProduct(Product product);

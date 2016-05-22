@@ -5,11 +5,6 @@ import io.undertow.Undertow;
 import java.util.logging.Logger;
 
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
-
-/**
- * Hello world!
- *
- */
 public class App {
 
 	private static final Logger logger = Logger.getLogger(App.class.getName());

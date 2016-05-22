@@ -89,7 +89,7 @@ public class DefaultProductService implements ProductService {
 		LOG.info("Product created!" + p);
 		if (isValid(p)) {			
 			productsMap.put(p.getID(), p);
-			System.out.println("map size is " + productsMap.size());			
+			//System.out.println("map size is " + productsMap.size());			
 			return new Res<Product>(Res.Type.CREATED, "Product created with id " + p.getID(), p);
 		}
 		return new Res<Product>(Res.Type.BAD_REQUEST, "invalid id", null);

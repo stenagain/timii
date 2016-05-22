@@ -5,4 +5,4 @@ Scenario:  Get catalog
 
 Given a catalog endpoint
 When I call get catalog
-Then the outcome should be Welcome to the Catalog
+Then the outcome should be Teaching someone something very useful

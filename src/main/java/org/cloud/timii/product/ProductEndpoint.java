@@ -42,23 +42,15 @@ public class ProductEndpoint{
 	}
 	
 		
-	/* (non-Javadoc)
-	 * @see org.cloud.timii.product.ProductService#getProducts(java.lang.String)
-	 */
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("{description}")
-	public Response getProducts(@QueryParam("description") String descStr) {
-		return Response.status(Response.Status.OK).entity(service.getProducts(descStr)).build();	
-	}
-
+	
 	/* (non-Javadoc)
 	 * @see org.cloud.timii.product.ProductService#getProductByID(java.lang.String)
 	 */
 	@GET
-	@Path("/{id}")
+	@Path("{id}")
 	@Produces("application/json")
 	public Response getProductByID(@PathParam("id") String id) {
+		LOG.info("getProductByID " + id);
 		return Response.status(Response.Status.OK).entity(service.getProductByID(id)).build();		
 	}
 
